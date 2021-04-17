@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: 'Source Serif Pro', serif;
+}
+
+
+/* START HEADER - ICONO Y NOMBRE */
+.header {
+    display: flex;
+    background-color: #161A1D;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+}
+
+
+#grad {
+    background-image: linear-gradient(to right, #161A1D 70%, #660708);
+}
+
+.icono {
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+}
+
+.titulo-principal {
+    margin: 1;
+    padding: 10px;
+    font-size: 190%;
+    color: #F5F3F4;
+}
+
+/* END HEADER - ICONO Y NOMBRE */
+
+/* START BARRA DE NAVEGACIÓN */
+.bar-nav {
+    display: flex;
+    background-color: #660708;
+}
+
+
+#ul-links {
+    list-style-type: none;
+    display: flex;
+    width: 1280px;
+    margin: 0;
+    padding: 0;
+    background-color: #660708;
+    justify-content: flex-end;
+}
+
+#links {
+    display: inline;
+}
+
+a {
+    display: block;
+    padding: 25px;
+    text-decoration: none;
+    color: #F5F3F4;
+    justify-content: flex-end;
+}
+
+#links a:hover {
+    background-color: #161A1D;
+    color: white;
+}
+
+.active {
+    background-color: #161A1D;
+    color: white;
+}
+
+/* END BARRA DE NAVEGACIÓN */
+
+
+/* START SECCION 1 */
+.section-1 {
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.leyenda1 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #D3D3D3;
+}
+
+.casa-lago {
+    width: 1000px;
+    height: 600px;
+    border-radius: 15px;
+    /* SOLO ENCONTRÉ ESTA FORMA DE PONER EL TAMAÑO DE LA IMAGEN COMO YO QUERÍA Y AGREGANDOLE MARGEN IZQUIERDO EN SECCIÓN 1 */
+}
+
+/* END SECCION 1 */
+
+
+
+/* STAR ICONOS Y DETALLES */
+
+#section-2 {
+    margin: 50px;
+
+}
+
+.titulo2 {
+    padding: 10px;
+    text-align: center;
+}
+
+#grid-container-iconos {
+    display: grid;
+    grid-column-gap: 10px;
+    column-gap: 10px;
+    grid-row-gap: 10px;
+    row-gap: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    height: auto;
+    padding: 30px;
+    grid-template-columns: repeat(4, auto); 
+    justify-content: center;
+}
+
+
+
+#grid-item {
+    justify-self: center;
+    padding: 10px;
+    /* No pude centrar los iconos igual que el texto*/
+}
+
+/* END ICONOS Y DETALLES */
+
+
+
+
+/* START FOOTER */
+
+#footer {
+    display: grid;
+    grid-column-gap: 10px;
+    column-gap: 10px;
+    margin-top: 30px;
+    height: auto;
+    padding: 30px;
+    grid-template-areas: "grid-ubicacion" "grid-social" "grid-contacto";
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    background-color: #161A1D;
+    color: #F5F3F4;
+}
+
+#grid-item-footer {
+    justify-self: center;
+    padding: 10px;
+}
+/* ACÁ NO PUDE PONER LOS ICONOS AL LADO DE LOS <p>*/
+
+#titulos-footer {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#ul-footer {
+    list-style-type: none;
+}
+
+.leyenda-derechos-reservados {
+    padding: 5px;
+    text-align: right;
+    background-color: #161A1D;
+    color: #F5F3F4;
+}
+
+
+/* END FOOTER */
+
+
